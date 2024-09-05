@@ -1,0 +1,5 @@
+AudioPath = "Resources/Audio/"
+CompressedPath = "Resources/Compressed/"
+DocumentsPath = "Resources/Documents/"
+ImagePath = "Resources/Image/"
+VideoPath = "Resources/Video/"
