@@ -85,6 +85,6 @@ fileIconMap = {
     "zip": ICON_COMPRESSED,
     "rar": ICON_COMPRESSED,
     "txt": ICON_TXT,
-    "md": ICON_TXT,
+    "md": ICON_MD,
 }
 

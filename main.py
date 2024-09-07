@@ -2,7 +2,6 @@ import os
 from tkinter import filedialog
 import customtkinter as ctk
 from tkinterdnd2 import TkinterDnD, DND_FILES
-from tkinter import *
 import ctypes as ct
 from Utils import *
 from PIL import Image, ImageTk
@@ -29,9 +28,10 @@ class DragDropApp:
         self.destination_folder = None
 
         def on_drop(event):
-            file_path = event.data
-            extension = file_path.split(
-                ".")[-1].lower().replace("{", "").replace("}", "")
+            file_path = event.data.replace("{", "").replace("}", "")
+            self.selected_file_path = file_path
+            extension = file_path.split(".")[-1].lower()
+            
             print(extension)
 
             if extension not in file_conversions:
@@ -41,15 +41,15 @@ class DragDropApp:
             self.drag_drop_icon.configure(light_image=Image.open(
                 fileIconMap[extension]), dark_image=Image.open(fileIconMap[extension]))
 
-            self.selected_file_path = os.path.basename(
+            file_name = os.path.basename(
                 file_path).replace("{", "").replace("}", "")
 
             self.conversion_options = file_conversions[extension]
             self.convert_to_combobox.configure(values=self.conversion_options)
             self.convert_to_combobox.set(self.conversion_options[0])
 
-            self.drag_drop_label.configure(text=self.selected_file_path)
-            print(f"File dropped: {self.selected_file_path}")
+            self.drag_drop_label.configure(text=file_name)
+            print(f"File dropped: {file_name}")
 
         # region GUI
         drag_drop_frame = ctk.CTkFrame(
@@ -142,13 +142,41 @@ class DragDropApp:
         extension = self.selected_file_path.split(
             ".")[-1].lower().replace("{", "").replace("}", "")
 
-        if fileIconMap[extension] == ICON_VIDEO:
-            Video.convert_video(self.selected_file_path,
-                                desired_extension, self.destination_folder)
-
+        # if fileIconMap[extension] in [ICON_TXT, ICON_MD]:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
+            
         if fileIconMap[extension] in [ICON_MUSIC, ICON_RECORD]:
             Audio.convert_audio(self.selected_file_path,
                                 desired_extension, self.destination_folder)
+
+        # if fileIconMap[extension] in [ICON_IMAGE, ICON_SVG]:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
+
+        # if fileIconMap[extension] in [ICON_DOC, ICON_DOCX]:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
+
+        # if fileIconMap[extension] in [ICON_CSV, ICON_XLS]:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
+
+        # if fileIconMap[extension] == ICON_COMPRESSED:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
+            
+        # if fileIconMap[extension] == ICON_PDF:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
+            
+        if fileIconMap[extension] == ICON_VIDEO:
+            Video.convert_video(self.selected_file_path,
+                                desired_extension, self.destination_folder)
+            
+        # if fileIconMap[extension] == ICON_PPT:
+        #     Audio.convert_audio(self.selected_file_path,
+        #                         desired_extension, self.destination_folder)
 
     def run(self):
         self.root.mainloop()
