@@ -137,7 +137,7 @@ class DragDropApp:
         print(f"Selected destination folder: {folder_path}")
 
     def convert(self):
-        from Services import Video, Audio
+        from Services import Video, Audio, Documents
         desired_extension = self.convert_to_combobox.get()
         extension = self.selected_file_path.split(
             ".")[-1].lower().replace("{", "").replace("}", "")
@@ -166,9 +166,9 @@ class DragDropApp:
         #     Audio.convert_audio(self.selected_file_path,
         #                         desired_extension, self.destination_folder)
             
-        # if fileIconMap[extension] == ICON_PDF:
-        #     Audio.convert_audio(self.selected_file_path,
-        #                         desired_extension, self.destination_folder)
+        if fileIconMap[extension] == ICON_PDF:
+            Documents.convert_pdf(self.selected_file_path,
+                                desired_extension, self.destination_folder)
             
         if fileIconMap[extension] == ICON_VIDEO:
             Video.convert_video(self.selected_file_path,
