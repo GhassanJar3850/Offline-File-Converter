@@ -1,0 +1,11 @@
+RES_AudioPath = "./Resources/Audio/"
+RES_CompressedPath = "./Resources/Compressed/"
+RES_DocumentsPath = "./Resources/Documents/"
+RES_ImagePath = "./Resources/Image/"
+RES_VideoPath = "./Resources/Video/"
+
+OUT_AudioPath = "./Outputs/Audio/"
+OUT_CompressedPath = "./Outputs/Compressed/"
+OUT_DocumentsPath = "./Outputs/Documents/"
+OUT_ImagePath = "./Outputs/Image/"
+OUT_VideoPath = "./Outputs/Video/"
