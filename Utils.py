@@ -16,6 +16,23 @@ ICON_MD = "./Icons/text.png"
 ICON_FOLDER = "./Icons/folder.ico"
 ICON_APP = "./Icons/app.ico"
 
+extensionColors = {
+    ICON_COMPRESSED: ["#ffb11f", "#9f7932"],
+    ICON_DOC: ["#0263d1", "#003d8b"],
+    ICON_DOCX: ["#0263d1", "#003d8b"],
+    ICON_IMAGE: ["#0a85c9", "#04558e"],
+    ICON_MUSIC: ["#9900cc", "#6a008b"],
+    ICON_PPT: ["#e03303", "#b32600"],
+    ICON_PDF: ["#e5252a", "#b11d1c"],
+    ICON_SVG: ["#ff6600", "#bb4f00"],
+    ICON_VIDEO: ["#fa0000", "#b30000"],
+    ICON_XLS: ["#00733b", "#006431"],
+    ICON_RECORD: ["#fa0000", "#b30000"],
+    ICON_CSV: ["#00733b", "#006431"],
+    ICON_TXT: ["#251d36", "#171420"],
+    ICON_MD: ["#251d36", "#171420"],
+}
+
 file_conversions = {
     "jpg": ["png", "tiff", "gif", "jpeg", "webp", "ico", "bmp"],
     "png": ["jpg", "tiff", "gif", "jpeg", "webp", "ico", "bmp"],
@@ -28,12 +45,12 @@ file_conversions = {
     "svg": ["png", "tiff", "jpeg", "jpg", "ico", "webp", "gif", "bmp"],
     "doc": ["pdf"],
     "docx": ["pdf"],
+    "xls": ["csv","pdf","xml"],
+    "xlsx": ["csv","pdf","xml"],
+    "csv": ["xlsx","pdf","xml"],
+    "ppt": ["pdf"],
+    "pptx": ["pdf"],
     "pdf": ["doc", "docx"],
-    "xls": ["xlsx", "csv"],
-    "xlsx": ["xls", "csv"],
-    "csv": ["xls", "xlsx"],
-    "ppt": ["pptx", "pdf"],
-    "pptx": ["ppt", "pdf"],
     "mp3": ["wav", "flac", "aac", "ogg"],
     "wav": ["mp3", "flac", "aac", "ogg"],
     "flac": ["mp3", "wav", "aac", "ogg"],
@@ -87,4 +104,3 @@ fileIconMap = {
     "txt": ICON_TXT,
     "md": ICON_MD,
 }
-
