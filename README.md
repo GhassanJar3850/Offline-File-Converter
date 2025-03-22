@@ -1,6 +1,6 @@
 # Offline File Converter
 
-![Offline File Converter Logo](assets/app.ico)
+![Offline File Converter Logo](Icons/app.ico)
 
 ## 🚀 Introduction
 Online file converters are widely used, but they come with drawbacks like data privacy concerns, internet dependency, and unnecessary steps. **Offline File Converter** is a Windows application that allows you to convert various file formats locally, saving data and time without compromising security.
