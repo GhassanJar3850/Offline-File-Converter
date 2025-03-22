@@ -2,17 +2,17 @@
 
 ![Offline File Converter Logo](Icons/app.ico)
 
-## 🚀 Introduction
+## I. Introduction
 Online file converters are widely used, but they come with drawbacks like data privacy concerns, internet dependency, and unnecessary steps. **Offline File Converter** is a Windows application that allows you to convert various file formats locally, saving data and time without compromising security.
 
-## 🎯 Features
+## II. Features
 - **Completely Offline**: No internet required for conversions.
 - **Wide Format Support**: Convert between images, documents, audio, video, archives, and more.
 - **Fast & Efficient**: Optimized for quick file processing.
 - **User-Friendly UI**: Simple drag-and-drop interface for easy conversions.
 - **Batch Conversion**: Convert multiple files at once.
 
-## 🔄 Supported Conversions
+## III. Supported Conversions
 Below is a comprehensive map of supported file conversions:
 
 ### 📷 Image Formats
@@ -56,22 +56,22 @@ Below is a comprehensive map of supported file conversions:
 ### 📝 Text Formats
 - **txt** ↔ md
 
-## 🖥️ Screenshots
+## IV. Screenshots
 ![Offline File Converter Logo](Screenshots/xls.png)
 ![Offline File Converter Logo](Screenshots/ppt.png)
 ![Offline File Converter Logo](Screenshots/jpg.png)
 ![Offline File Converter Logo](Screenshots/ui.png)
 
-## 🛠️ Installation
+## V. Installation
 Still working on building this application as an exe, any help is welcome.
 
-## 🚀 Usage
+## VI. Usage
 1. Open the application.
 2. Drag and drop your file or select it manually.
-3. Choose the desired output format.
+3. Choose the desired output format and the destination directory.
 4. Click **Convert** and wait for the process to complete.
 
-## 🤝 Contributing
+## VII. Contributing
 Contributions are welcome! Feel free to fork the repository and submit pull requests.
 
 ## 📜 License
