@@ -41,7 +41,6 @@ def convert_Image(input_file, output_format, output_dir=None):
         print(f"from {extension} to {output_format}")
         supports_transparency = ["webp", "png", "gif", "svg", "ico"]
         if extension in supports_transparency and output_format not in supports_transparency:
-            print("I've been there")
             im = im.convert('RGB')
 
         output_file_path = os.path.join(
