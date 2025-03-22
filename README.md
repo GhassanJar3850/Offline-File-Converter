@@ -57,12 +57,13 @@ Below is a comprehensive map of supported file conversions:
 - **txt** ↔ md
 
 ## 🖥️ Screenshots
-*(Add screenshots of the UI here)*
+![Offline File Converter Logo](Screenshots/xls.png)
+![Offline File Converter Logo](Screenshots/ppt.png)
+![Offline File Converter Logo](Screenshots/jpg.png)
+![Offline File Converter Logo](Screenshots/ui.png)
 
 ## 🛠️ Installation
-1. **Download** the latest release from [GitHub Releases](#).
-2. **Run** the installer and follow the setup instructions.
-3. **Launch** the application and start converting files offline!
+Still working on building this application as an exe, any help is welcome.
 
 ## 🚀 Usage
 1. Open the application.
