@@ -57,10 +57,10 @@ Below is a comprehensive map of supported file conversions:
 - **txt** ↔ md
 
 ## IV. Screenshots
+![Offline File Converter Logo](Screenshots/ui.png)
 ![Offline File Converter Logo](Screenshots/xls.png)
 ![Offline File Converter Logo](Screenshots/ppt.png)
 ![Offline File Converter Logo](Screenshots/jpg.png)
-![Offline File Converter Logo](Screenshots/ui.png)
 
 ## V. Installation
 Still working on building this application as an exe, any help is welcome.
